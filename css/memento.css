@@ -3,6 +3,38 @@ html {
     scroll-behavior: smooth;
 }
 
+.carousel-item .view {
+    /* style all carousel images */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item .landing1 {
+    background-image: url("../images/lorna/wedding.jpg");
+}
+
+.carousel-item .landing2 {
+    background-image: url("../images/lorna/babyshower4.png");
+}
+
+.carousel-item .landing3 {
+    background-image: url("../images/lorna/birthday5.jpg");
+}
+
+.carousel-item .landing4 {
+    background-image: url("../images/lorna/woman-throwing-confetti-1139317.jpg");
+}
+
+.carousel-inner h1 {
+    /* styling the catch phrase */
+    font-family: 'Noto Serif', serif;
+    padding-top: 50%;
+    font-weight: bold;
+    line-height: 65px;
+    font-size: 50px;
+    text-align: center;
+}
+
 .navbar {
     background: rgba(82, 5, 97, 0.4) !important;
 }
