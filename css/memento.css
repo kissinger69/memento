@@ -112,3 +112,7 @@ html {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
+
+.card-wrapper.card-action {
+    min-height: 400px;
+}
