@@ -1,7 +1,20 @@
-    html {
-        scroll-behavior: smooth;
-    }
     /* LANDING PAGE */
+    div#brand-name{
+      font-family: 'Qwigley', cursive;
+      font-size: 7vw;
+      display: inline;
+      max-height: 2%;
+    }
+    .navbar .container{
+      margin: 0;
+      height: 45px; /*set height of navbar*/
+    }
+    @media (min-width: 800px) and (max-width: 850px) { /* set features of nav bar when it collapses */
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+        height: 45px;
+      }
+    }
     .carousel-item .view { /* style all carousel images */
         background-repeat: no-repeat;
         background-size: cover;
@@ -26,10 +39,10 @@
     .carousel-inner h1 {
         /* styling the catch phrase */
         font-family: 'Noto Serif', serif;
-        padding-top: 50%;
+        padding-top: 60%;
         font-weight: bold;
         line-height: 65px;
-        font-size: 50px;
+        font-size: 3vw;
         text-align: center;
     }
     /*LANDING PAGE */

@@ -12,46 +12,63 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Qwigley&display=swap" rel="stylesheet">
     <!-- Google font-->
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/> <!--fontawesome icons-->
     <link href="css/memento.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <span class="navbar-brand navbar-text"> <a href="#"></a> Memento</span>
-        <div class="collapse navbar-collapse" id="collapse_target">
-            <ul class="navbar-nav ml-lg-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutUs">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#beListed">Get listed</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contactUs">Contact Us</a>
-                </li>
-                <li id="find-button">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="find" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Choose an event
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Wedding</a>
-                            <a class="dropdown-item" href="#">Birthdays</a>
-                            <a class="dropdown-item" href="#">Graduation</a>
-                            <a class="dropdown-item" href="#">Baby Showers</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#" target="_self">
+        <div id = "brand-name"><strong>Memento</strong></div>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html" target="_self">About Us
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="find.html" target="_self">Find a photographer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="list.html" target="_self">Be listed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonials.html" target="_self">Testimonials</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link border border-light rounded"
+              target="_self">
+              <i class="far fa-address-book"></i>&nbsp;&nbsp;Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
     <!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
         <!--Indicators-->
