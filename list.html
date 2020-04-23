@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Be Listed</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--allows for importing of fontawesome icons -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- Google font-->
+    <link href="css/memento.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/memento.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 border">
+            <div class="jumbotron shadow-lg mb-5 bg-white rounded">
+                <div class="header">
+                    <h5>Get listed<div class="fullstop">.</div></h5></div>
+                <div class="row container">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 container">
+                    <form id="listForm">
+                        <div class="form-group">
+                            <label for="listName">Full Name</label>
+                            <input type="text" class="form-control" id="listName" placeholder="alphabetical letters only" pattern="[a-zA-Z ]+" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="listRadios">What events do you photograph?</label>
+                            <div class="form-row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="babyshowerRadio" name="customRadio" class="custom-control-input" checked required>
+                                      <label class="custom-control-label" for="babyshowerRadio">Babyshowers</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="birthdayRadio" name="customRadio" class="custom-control-input">
+                                      <label class="custom-control-label" for="birthdayRadio">Birthdays</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="graduationRadio" name="customRadio" class="custom-control-input">
+                                      <label class="custom-control-label" for="graduationRadio">Graduations</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="weddingRadio" name="customRadio" class="custom-control-input">
+                                      <label class="custom-control-label" for="weddingRadio">Weddings</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="listCost">How much do you charge for a full day event?</label>
+                          <select class="form-control" id="listCost">
+                              <option>Below 20K</option>
+                              <option>Ksh.20K-30K</option>
+                              <option>Ksh.30K-40K</option>
+                              <option>Ksh.40K-50K</option>
+                              <option>Above 50K</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="listPortfolio">Enter a link to your portfolio:</label>
+                          <input type="url" class="form-control" id="listPortfolio" placeholder="https://example.com" pattern="https://.*" size="30" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="listEmail">Email address</label>
+                            <input type="email" class="form-control" id="listEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label>Submit an image of yourself:</label>
+                          <input type="file" name="fileToUpload" id="listImage" required>
+                        </div>
+                        <div class="form-group textarea">
+                            <label for="listAboutMe">Write something short about yourself...</label>
+                            <textarea type="text" id="listAbout" class="form-control" rows="8" placeholder="Here's what you need to know about me..." maxlength="280" required></textarea>
+                        </div>
+                        <div id="error"></div><br>
+                        <button type="submit" class="btn btn-outline-default" id="listMe">List me!</button>
+                    </form>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+</body>
+
+</html>
